@@ -1,0 +1,31 @@
+<div class="balance-container">
+  <br/>
+  <div>
+    <span>
+        <label for="numeroTarjeta">Número de Tarjeta: </label>
+        <label>{{tarjeta.numeroTarjeta}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="fechaVencimiento">Fecha de vencimiento: </label>
+        <label>{{tarjeta.fechaVencimiento | date:'yyyy-MM-dd'}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="numeroTarjeta">Saldo: </label>
+        <label>${{tarjeta.balance}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <button class="key-button" (click)="irAOperaciones()">Atras </button>
+        <button class="key-button-salir" (click)="volverAHome()">Salir</button>
+    </span>
+  </div>
+    
+</div>

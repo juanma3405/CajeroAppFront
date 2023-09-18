@@ -1,0 +1,30 @@
+<div  class="pin-container">
+  <h2>Ingrese su numero de Pin </h2>
+  <label for="numeroPin">Número de Pin:</label>
+  <div>{{numeroPin}}</div>
+  <div class="numeric-keyboard">
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarNumero('1')">1</button>
+            <button class="key-button" (click)="agregarNumero('2')">2</button>
+            <button class="key-button" (click)="agregarNumero('3')">3</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarNumero('4')">4</button>
+            <button class="key-button" (click)="agregarNumero('5')">5</button>
+            <button class="key-button" (click)="agregarNumero('6')">6</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarNumero('7')">7</button>
+            <button class="key-button" (click)="agregarNumero('8')">8</button>
+            <button class="key-button" (click)="agregarNumero('9')">9</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarNumero('0')">0</button>
+            <button class="key-button" (click)="reiniciarNumero()">Limpiar</button>
+            <button class="key-button" (click)="verificarPin()">Aceptar</button>
+        </div>
+    </div>
+    <div>
+        <button class="key-button-salir" (click)="volverAHome()">Salir</button>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="retiro-container">
+  <h2>Ingrese la cantidad a retirar </h2>
+  <label for="cantidadARetirar"> Cantidad:</label>
+  <div>{{cantidadARetirar}}</div>
+  <br/>
+  <div class="numeric-keyboard">
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarTeclaACantidad('1')">1</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('2')">2</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('3')">3</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarTeclaACantidad('4')">4</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('5')">5</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('6')">6</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarTeclaACantidad('7')">7</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('8')">8</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('9')">9</button>
+        </div>
+        <div class="keyboard-row">
+            <button class="key-button" (click)="agregarTeclaACantidad('0')">0</button>
+            <button class="key-button" (click)="agregarTeclaACantidad('.')">.</button>
+            <button class="key-button" (click)="reiniciarCantidad()">Limpiar</button>
+        </div>
+    </div>
+    <div>
+        <button class="key-button" (click)="retirarDinero()">Aceptar</button>
+        <button class="key-button-salir" (click)="volverAHome()">Salir</button>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="operacion-container">
+  <br/>
+  <div>
+    <span>
+        <label for="numeroTarjeta">Número de Tarjeta: </label>
+        <label>{{tarjeta.numeroTarjeta}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="fecha">Fecha </label>
+        <label>{{operacion.fechaHora | date:'yyyy-MM-dd'}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="fecha">Hora </label>
+        <label>{{operacion.fechaHora  | date:'HH:mm:ss'  }}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="cantidad">Cantidad retirada: $</label>
+        <label>{{operacion.cantidadRetirada}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <label for="numeroTarjeta">Saldo: $</label>
+        <label>{{tarjeta.balance}}</label>
+    </span>
+  </div>
+  <br/>
+  <div>
+    <span>
+        <button class="key-button" (click)="irAOperaciones()">Atras </button>
+        <button class="key-button-salir" (click)="volverAHome()">Salir</button>
+    </span>
+  </div>
+    
+</div>
